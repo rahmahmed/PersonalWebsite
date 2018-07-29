@@ -1,0 +1,33 @@
+.back_width {
+    width: 100%;
+}
+
+.title_size {
+    font-size: 5rem;
+}
+
+.img_border{
+    border-bottom: 5px;
+    border-color: gray;
+}
+
+.img_size {
+    display: flex;
+    flex: 1;
+    max-width: "350";
+    max-height: "488";
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.justify {
+    text-align: left;
+    line-height: 150%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
