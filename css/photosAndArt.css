@@ -84,3 +84,6 @@ body {
     justify-content: center;
     flex-direction: row;
 }
+.carousel .carousel-item{
+    width:100%;
+  }
