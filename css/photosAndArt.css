@@ -87,3 +87,59 @@ body {
 .carousel .carousel-item{
     width:100%;
   }
+
+  .back_width {
+    width: 100%;
+}
+
+.title_size {
+    font-size: 5rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.justify {
+    text-align: left;
+    line-height: 150%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.absolutefix {
+    position: fixed;
+    margin-top: 0%;
+}
+
+.coco {
+    background-color: red;
+}
+
+ul li:hover {
+    background-color: #eceff1;
+ }
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
