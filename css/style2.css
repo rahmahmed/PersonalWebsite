@@ -17,6 +17,15 @@
 	transition: opacity 0.3s;
 }
 
+.back_width {
+    width: 100%;
+}
+
+i.medium {
+	font-size: 4rem;
+	color: #546e7a
+}
+
 .js .grid--loaded::after {
 	opacity: 0;
 }
