@@ -350,6 +350,10 @@ i.medium {
 	color: transparent;
 }
 
+.back:hover {
+    color: #03a9f4;
+}
+
 @media screen and (max-width: 40em) {
 	.description--preview h3 {
 		font-size: 0.5em;

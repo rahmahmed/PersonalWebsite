@@ -88,7 +88,7 @@ body {
     width:100%;
   }
 
-  .back_width {
+.back_width {
     width: 100%;
 }
 
@@ -122,6 +122,10 @@ body {
 ul li:hover {
     background-color: #eceff1;
  }
+
+ .back:hover {
+    color: #03a9f4;
+}
 
 
 

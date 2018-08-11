@@ -37,3 +37,7 @@
     justify-content: center;
     flex-direction: row;
 }
+
+.back:hover {
+    color: #03a9f4;
+}

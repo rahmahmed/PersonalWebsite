@@ -28,3 +28,7 @@
 .sec {
     background-color: #cfd8dc;
 }
+
+.back:hover {
+    color: #03a9f4;
+}
