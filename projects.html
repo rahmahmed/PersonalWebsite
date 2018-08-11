@@ -1,28 +1,92 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>About Me</title>
-              
-    <!-- CSS  -->
+    <title>Pushpin Demo - Materialize</title>
+    <!-- CSS-->
+    <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/projects.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/projects.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/-->
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
-    <ul class="mdc-image-list mdc-image-list--masonry my-masonry-image-list">
-        <li class="mdc-image-list__item">
-            <img class="mdc-image-list__image" src="...">
-            <div class="mdc-image-list__supporting">
-                <span class="mdc-image-list__label">Text label</span>
-            </div>
-        </li>
-    </ul>
-        
+    <div id="one">This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br />
+        This is some dummy text! <br /></div>
+    <div id="two">goodbye</div>
+    <div id="three">Hello</div>
+    <div id="four">goodbye</div>
+    <script>
+        (function(window){
+        $.fn.stopAtTop= function () {
+            var $this = this,
+                $window = $(window),
+                thisPos = $this.offset().top,
+                setPosition,
+                under,
+                over;
+
+            under = function(){
+                if ($window.scrollTop() < thisPos) {
+                    $this.css({
+                        position: 'absolute',
+                        top: ""
+                    });
+                    setPosition = over;
+                }
+            };
+            
+            over = function(){
+                if (!($window.scrollTop() < thisPos)){
+                    $this.css({
+                        position: 'fixed',
+                        top: 0
+                    });
+                    setPosition = under;
+                }
+            };
+            
+            setPosition = over;
+            
+            $window.resize(function()
+            {
+                bumperPos = pos.offset().top;
+                thisHeight = $this.outerHeight();
+                setPosition();
+            });
+            
+            $window.scroll(function(){setPosition();});
+            setPosition();
+        };
+        })(window);
+
+        $('#one').stopAtTop();
+        $('#two').stopAtTop();
+        $('#three').stopAtTop();
+        $('#four').stopAtTop();
+    </script>
 </body>
 </html>
