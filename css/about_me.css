@@ -30,6 +30,7 @@
     max-width: "350";
     max-height: "488";
 }
+
 .justify {
     text-align: left;
     line-height: 150%;
@@ -40,4 +41,8 @@
 
 .back:hover {
     color: #03a9f4;
+}
+
+h6 {
+    font-weight: 200;
 }
