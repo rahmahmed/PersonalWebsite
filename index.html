@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <div class="container wid">
+  <div class="container">
     <div class="section">
 
       <!--   Icon Section   -->
@@ -104,32 +104,32 @@
         <div class="col s12 center">
           <h4>Contact Me</h4>          
           <div class="row size">
-            <form class="col s12">
+            <form class="col s12" action="mailto:rahmaahmedschool@gmail.com" method="POST">
               <div class="row">
                 <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
+                  <input id="first_name" name="first_name" type="text" class="validate">
                   <label for="first_name">First Name</label>
                 </div>
                 <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
+                  <input id="last_name" name="last_name" type="text" class="validate">
                   <label for="last_name">Last Name</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
+                  <input id="email" type="email" name="email" class="validate">
                   <label for="email">Email</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="moreinfo" class="materialize-textarea"></textarea>
+                  <textarea id="moreinfo" name="moreinfo" class="materialize-textarea"></textarea>
                   <label for="moreinfo">Tell Me Anything</label>
                 </div>
               </div>
               <div class="row size">
                 <div class="col s12 m12">
-                  <a class="waves-effect waves-blue-grey lighten-4 btn white text-blue btn-large" onclick="M.toast({html: 'Thanks for sending me msg I will contact you asap'})" style="color: black">Send</a>
+                  <a value="Send" class="waves-effect waves-blue-grey lighten-4 btn white text-blue btn-large" onclick="M.toast({html: 'Thanks for sending me msg I will contact you asap'})" style="color: black">Send</a>
                </div>
               </div>
             </form>
@@ -156,6 +156,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 
   </body>
 </html>
