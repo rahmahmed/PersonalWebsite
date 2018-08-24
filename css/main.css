@@ -1,0 +1,12 @@
+
+
+.grad {
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    height: 100%
+}
+
+html, 
+body {
+    height: 100%;
+    background-color: red;
+}
