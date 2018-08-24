@@ -1,0 +1,52 @@
+.sec {
+    background-color: #cfd8dc;
+}
+
+.back_width {
+    width: 100%;
+}
+
+.title_size {
+    font-size: 5rem;
+}
+
+.img_border{
+    border-bottom: 5px;
+    border-color: gray;
+}
+
+.img_size {
+    display: flex;
+    flex: 1;
+    max-width: "350";
+    max-height: "488";
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.cards img {
+    margin: 10px;
+    border: 5px solid grey;
+    max-width: "350";
+    max-height: "488";
+}
+
+.justify {
+    text-align: left;
+    line-height: 150%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.back:hover {
+    color: #03a9f4;
+}
+
+h6 {
+    font-weight: 200;
+}
