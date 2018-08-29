@@ -29,6 +29,9 @@
     border: 5px solid grey;
     max-width: "350";
     max-height: "488";
+    top:-10px;
+    left:-10px;
+    z-index:10;
 }
 
 .justify {
@@ -46,3 +49,76 @@
 h6 {
     font-weight: 200;
 }
+
+*{
+  box-sizing:border-box;
+}
+.containers{
+    height:468px;
+    width:350px;
+    position:relative;
+
+}
+.inner{
+    height:488px;
+    width:350px;
+    position:absolute;
+    border:8px solid orange;
+    bottom:35px;
+    left: -25px;
+    z-index:10;
+  }
+
+
+
+
+
+
+   .underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+#after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: #000;
+    height: 4px;
+    transition-property: width;
+    transition-duration: 0.3s;
+  }
+
+
+
+
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    border: 5px solid grey;
+}
+
+#slide {
+    position: absolute;
+    left: 50%;
+    -webkit-animation: slide 0.5s forwards;
+    animation: slide 0.5s forwards;
+}
+
+@-webkit-keyframes slide {
+    from { left: 0%; }
+    to { left: 90%; }}
+
+@keyframes slide {
+    from { left: 0%; }
+    to { left: 90%; }}
+
