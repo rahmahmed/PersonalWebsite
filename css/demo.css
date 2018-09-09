@@ -164,7 +164,7 @@ button:focus {
 /* Content */
 
 .content {
-	padding: 1em 0 3em;
+	padding: 1em 0 0;
 	max-width: 1080px;
 	margin: 0 auto;
 }
