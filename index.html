@@ -371,100 +371,13 @@
                         <i class="fa fa-circle-thin fa-stack-2x" style="color:#fae4d8"></i>
                         <i class="fa fa-linkedin fa-stack-1x" style="color:#fae4d8"></i>
                     </span>
+                    <span class="fa-stack fa-3x">
+                        <i class="fa fa-circle-thin fa-stack-2x" style="color:#fae4d8"></i>
+                        <i class="fa fa-github fa-stack-1x" style="color:#fae4d8"></i>
+                    </span>
                 </div> 
             </div>
-    </div>
-              
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/classie.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/modernizr-custom.js"></script>
-	<script>
-		(function() {
-			function createCircleOverlay(previewEl) {
-				var dummy = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-				dummy.setAttributeNS(null, 'version', '1.1');
-				dummy.setAttributeNS(null, 'width', '100%');
-				dummy.setAttributeNS(null, 'height', '100%');
-				dummy.setAttributeNS(null, 'class', 'overlay');
-				var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-				var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-				circle.setAttributeNS(null, 'cx', 0);
-				circle.setAttributeNS(null, 'cy', 0);
-				circle.setAttributeNS(null, 'r', Math.sqrt(Math.pow(previewEl.offsetWidth,2) + Math.pow(previewEl.offsetHeight,2)));
-				dummy.appendChild(g);
-				g.appendChild(circle);
-				previewEl.appendChild(dummy);
-			}
-			
-			new GridFx(document.querySelector('.grid'), {
-				onInit : function(instance) {
-					createCircleOverlay(instance.previewEl);
-				},
-				onResize : function(instance) {
-					instance.previewEl.querySelector('svg circle').setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
-				},
-				onOpenItem : function(instance, item) {
-					var gridImg = item.querySelector('img'),
-						gridImgOffset = gridImg.getBoundingClientRect(),
-						win = {width: document.documentElement.clientWidth, height: window.innerHeight},
-						SVGCircleGroupEl = instance.previewEl.querySelector('svg > g'),
-						SVGCircleEl = SVGCircleGroupEl.querySelector('circle');
-						
-					SVGCircleEl.setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
-					if( gridImgOffset.left + gridImg.offsetWidth/2 < win.width/2 ) {
-						SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(' + win.width + ', ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
-					}
-					else {
-						SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(0, ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
-					}
-				}
-			});
-        })();
-    </script>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-        }
-
-
-        var i = 0;
-        var txt = 'Lorem ipsum dummy text blabla.';
-        var speed = 50;
-
-        function typeWriter() {
-        if (i < txt.length) {
-            document.getElementById("demo").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        }
-        }
-    </script>
+    </div>         
     
     <script>
         var TxtType = function(el, toRotate, period) {
